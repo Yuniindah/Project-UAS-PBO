@@ -8,3 +8,6 @@ Pygame adalah seperangkat modul Python yang dirancang untuk membuat permainan. P
 Pygame ini gratis. Dan dirilis di bawah Lisensi GPL , Anda dapat membuat sebuah aplikasi yang open source, gratis, freeware, shareware, dan game komersial dengan pygame ini.
 
 Untuk pengenalan yang bagus untuk pygame ini, periksa baris demi baris simpanse tutorial , dan pengenalan untuk programmer python atau Bab 17 sampai 20 dari buku "Ciptakan Anda Game Komputer Sendiri dengan Python" .
+
+link kivy = https://www.youtube.com/watch?v=6yMHHC36tT0
+link pygame = https://github.com/techwithtim/pygame-tutorials/
