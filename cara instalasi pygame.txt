@@ -1,0 +1,10 @@
+Instalasi Modul Pygame 
+Agar modul pygame dapat digunakan untuk pembuatan game, maka terlebih dahulu dilakukan instalasi Pygame.  Tahapan-tahapan yang harus dilakukan untuk instalasi pygame ini adalah : 
+a. Siapkan file pygame.whl Download library pygame di https://www.lfd.uci.edu/~gohlke/pythonlibs/ .Sesuaikan versi python yang terinstall dengan versi library pygame yang akan di download. Contoh python v3.5 telah terinstall, maka download library pygame dengan cp35m-win32. 
+ 
+b. Rubah file pygame.whl menjadi .zip Rubah extension file library pygame lalu extract isi library tersebut. 
+ 
+c. Copy file pygame yang dibutuhkan i. masuk ke dalam directory python (C:\Users\#username\AppData\Local\Programs\Python\Python35-32) ii. masuk kedalam folder “include” dan buat folder baru bernama “pygame”. iii. Di dalam folder hasil extract file library pygame yang sudah didownload, masuk ke “pygame1.9.4.data\header”, copy semua file di dalam folder tersebut dan masukkan ke dalam folder: C:\Users\#username\AppData\Local\Programs\Python\Python35-32\include\pygame iv. kembali ke folder hasil extract file library pygame tadi, copy folder “pygame” dan “pygame1.9.4.dist-info” kedalam: C:\Users\#username\AppData\Local\Programs\Python\Python35-32\Lib\site-packages 
+ 
+d. Cek hasil installasi Buka IDLE Python lalu lakukan perintah “import pygame”, jika tidak ada tulisan error maka pygame sudah berhasil terinstall. 
+ 

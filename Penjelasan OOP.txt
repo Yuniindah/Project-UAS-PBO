@@ -1,0 +1,109 @@
+Apa itu Object-Oriented Programming (OOP)?
+Pemrograman berorientasi objek, atau OOP singkatnya, adalah paradigma
+pemrograman yang menyediakan sarana untuk menyusun program sehingga sifat dan perilaku digabungkan menjadi objek individual. Misalnya, objek bisa mewakili seseorang dengan nama properti, umur, alamat, dll, dengan perilaku seperti berjalan, berbicara, bernafas, dan berlari. Atau email dengan properti seperti daftar penerima, subjek, badan, dll., Dan perilaku seperti menambahkan lampiran dan pengiriman.
+Dengan kata lain, pemrograman berorientasi obyek adalah sebuah pendekatan untuk pemodelan beton, hal-hal dunia nyata seperti mobil dan juga hubungan antara hal-hal seperti perusahaan dan karyawan, siswa dan guru, dll. Model OOP entitas dunia nyata sebagai objek perangkat lunak, yang memiliki beberapa data yang terkait dengannya dan bisa melakukan fungsi tertentu.
+Paradigma pemrograman umum lainnya adalah pemrograman prosedural yang menyusun program seperti resep karena menyediakan seperangkat langkah, dalam bentuk fungsi dan blok kode, yang mengalir secara berurutan untuk menyelesaikan tugas. Mengambil kunci adalah objek berada di pusat paradigma pemrograman berorientasi objek, tidak hanya mewakili data, seperti dalam pemrograman prosedural, namun juga dalam keseluruhan struktur program.
+
+CATATAN : Karena Python adalah bahasa pemrograman multi-paradigma, Anda dapat memilih paradigma yang paling sesuai dengan masalah yang ada, menggabungkan paradigma yang berbeda dalam satu program, dan / atau beralih dari satu paradigma ke paradigma lain saat program Anda berkembang.
+class dengan Python
+Berfokus pertama pada data, masing-masing benda atau benda merupakan turunan dari beberapa class. Struktur data primitif yang tersedia dengan Python, seperti angka, string, dan daftar dirancang untuk mewakili hal-hal sederhana seperti biaya sesuatu, nama sebuah puisi, dan warna favorit Anda masing-masing.
+Bagaimana jika Anda ingin mewakili sesuatu yang jauh lebih rumit?
+Misalnya, Anda ingin melacak sejumlah hewan yang berbeda. Jika Anda menggunakan daftar, elemen pertama bisa menjadi nama hewan sementara unsur kedua bisa mewakili umurnya.
+Bagaimana Anda tahu elemen mana yang seharusnya? Bagaimana jika Anda memiliki 100 hewan yang berbeda? Apakah Anda yakin setiap hewan memiliki nama dan usia, dan sebagainya? Bagaimana jika Anda ingin menambahkan properti lainnya ke hewan-hewan ini? Ini tidak memiliki organisasi, dan ini adalah kebutuhan class yang pasti .class digunakan untuk membuat struktur data pengguna baru yang berisi informasi sewenang-wenang tentang sesuatu. Dalam kasus binatang, kita bisa membuat
+sebuah Animal()class untuk melacak properti tentang Hewan seperti nama dan usia.
+Penting untuk dicatat bahwa sebuah class hanya menyediakan struktur-ini adalah cetak biru untuk bagaimana sesuatu harus didefinisikan, namun sebenarnya tidak menyediakan konten nyata itu sendiri. class Animal() dapat menentukan bahwa nama dan usia yang diperlukan untuk mendefinisikan hewan, tetapi tidak akan benar-benar menyatakan apa
+nama hewan tertentu atau usia. Ini mungkin membantu memikirkan class sebagai ide untuk bagaimana sesuatu harus didefinisikan.
+
+Objek Python (Contoh)
+Sementara class adalah cetak biru, sebuah contoh adalah salinan class dengan nilai sebenarnya , secara harfiah merupakan objek milik class tertentu. Ini bukan ide lagi; Ini adalah hewan yang sebenarnya, seperti seekor Dog bernama Roger yang berusia delapan tahun.
+
+Dengan kata lain, class seperti bentuk atau kuesioner. Ini mendefinisikan informasi yang dibutuhkan. Setelah Anda mengisi formulir, salinan spesifik Anda adalah turunan dari class; Ini berisi informasi aktual yang relevan dengan Anda.
+
+Anda dapat mengisi banyak salinan untuk membuat banyak contoh yang berbeda, namun tanpa formulir sebagai panduan, Anda akan tersesat, tidak tahu informasi apa yang dibutuhkan. Jadi, sebelum Anda dapat membuat contoh objek individual, pertama-tama kita harus menentukan apa yang dibutuhkan dengan mendefinisikan class.
+
+Cara Menentukan class dengan Python
+Mendefinisikan sebuah class sederhana dengan Python:
+
+class player: 
+        pass
+Anda memulai dengan classkata kunci untuk menunjukkan bahwa Anda menciptakan sebuah class, maka Anda menambahkan nama class (menggunakan notasi CamelCase , dimulai dengan huruf kapital.)
+
+Selain itu, kami menggunakan kata kunci Python di passsini. Ini sangat sering digunakan sebagai tempat pemegang kode dimana akhirnya akan pergi. Hal ini memungkinkan kita untuk menjalankan kode ini tanpa membuang kesalahan.
+
+Catatan: Kode di atas benar pada Python 3. Dengan Python 2.x (“legacy Python”), Anda akan menggunakan definisi class yang sedikit berbeda:
+# Python 2.x class Definition:
+class Dog(object):
+    pass
+Bagian (object)dalam tanda kurung menentukan class induk yang Anda warisi (lebih lanjut tentang ini di bawah ini.) Dengan Python 3, ini tidak lagi diperlukan karena ini adalah default implisit.
+
+Atribut Instance
+Semua class membuat objek, dan semua objek mengandung karakteristik yang disebut atribut (disebut sebagai properti pada paragraf pembuka). Gunakan __init__()metode untuk menginisialisasi (misalnya, tentukan) atribut awal objek dengan memberi mereka nilai default (atau side state). Metode ini harus memiliki setidaknya satu argumen dan juga selfvariabel, yang mengacu pada objek itu sendiri (misalnya, player).
+
+class player(object):
+    def __init__(self,x,y,width,height):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.vel = 5
+        self.isJump = False
+        self.left = False
+        self.right = False
+        self.walkCount = 0
+        self.jumpCount = 10
+        self.standing = True
+        self.hitbox = (self.x + 17, self.y + 11, 29, 52)
+
+Dalam kasus classPlayer(), setiap player pasti memiliki ketentuan tertentu, yang jelas penting untuk diketahui saat Anda mulai benar-benar menciptakan Player yang berbeda. Ingat: class hanya untuk mendefinisikan Player.
+
+Demikian pula, self variabel juga merupakan instance dari class. Karena contoh class memiliki nilai yang berbeda, kita dapat menyatakannya self.x = x self.y = y.
+
+CATATAN : Anda tidak perlu memanggil __init__()metode ini; Ini akan dipanggil secara otomatis saat Anda membuat instance ‘Player’ baru.
+Atribut class
+Sementara atribut instance spesifik untuk setiap objek, atribut class sama untuk semua contoh — yang dalam hal ini adalah semua Dog.
+
+class player(object):
+    def __init__(self,x,y,width,height):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.vel = 5
+        self.isJump = False
+        self.left = False
+        self.right = False
+        self.walkCount = 0
+        self.jumpCount = 10
+        self.standing = True
+        self.hitbox = (self.x + 17, self.y + 11, 29, 52)
+Class projectile(object):
+    def __init__(self,x,y,radius,color,facing):
+        self.x = x
+        self.y = y
+        self.radius = radius
+        self.color = color
+        self.facing = facing
+        self.vel = 8 * facing
+maka setelah program diatas lalu tambahkan walk untuk membuat orang pada musuh
+
+class enemy(object):
+    walkRight = [pygame.image.load('R1E.png'), pygame.image.load('R2E.png'), pygame.image.load('R3E.png'), pygame.image.load('R4E.png'), pygame.image.load('R5E.png'), pygame.image.load('R6E.png'), pygame.image.load('R7E.png'), pygame.image.load('R8E.png'), pygame.image.load('R9E.png'), pygame.image.load('R10E.png'), pygame.image.load('R11E.png')]
+    walkLeft = [pygame.image.load('L1E.png'), pygame.image.load('L2E.png'), pygame.image.load('L3E.png'), pygame.image.load('L4E.png'), pygame.image.load('L5E.png'), pygame.image.load('L6E.png'), pygame.image.load('L7E.png'), pygame.image.load('L8E.png'), pygame.image.load('L9E.png'), pygame.image.load('L10E.png'), pygame.image.load('L11E.png')]
+
+
+pada code yang dibawah ini untuk memulai permainannya 
+
+font = pygame.font.SysFont('comicsans', 30, True)
+man = player(200, 410, 64,64)
+goblin = enemy(100, 410, 64, 64, 450)
+shootLoop = 0
+bullets = []
+run = True
+while run:
+    clock.tick(27)
+
+
+Kesimpulan
+Anda sekarang harus tahu class apa, mengapa Anda ingin atau perlu menggunakannya, dan bagaimana menciptakan class parents dan class child untuk menyusun program Anda dengan lebih baik.
+
+Perlu diketahui bahwa OOP adalah paradigma pemrograman dan bukan konsep Python. Sebagian besar bahasa pemrograman modern seperti Java, C#, C ++ mengikuti prinsip OOP. Jadi, kabar baiknya adalah bahwa belajar dasar pemrograman berorientasi objek akan sangat berharga bagi Anda dalam berbagai situasi-entah Anda bekerja dengan Python atau tidak.

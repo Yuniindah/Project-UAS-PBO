@@ -1,0 +1,10 @@
+Kivy
+Kivy adalah modul atau pustaka open source pada Python yang digunakan untuk membuat atau mengembangkan aplikasi seluler.
+Kivy dapat berjalan di Windows, OS X, Android, iOS, dan Raspberry Pi. Kita juga dapat menjalankan kode yang sama pada semua platform yang berbeda pula.
+Kivy adalah GUI/NUI framework yang menggunakan bahasa pemrograman Python, dapat dijalankan pada Windows, Linux, OS X, Android dan iOS dengan menggunakan code yang sama dan menggunakan MIT license sehingga 100% free to use dan boleh dikomersialisasikan. Kivy didesain untuk membantu pembuatan dan pengembangan aplikasi cross-platform secara cepat.
+
+Pygame adalah seperangkat modul Python yang dirancang untuk membuat permainan. Pygame menambahkan fungsi di atas dengan sangat baik di SDL perpustakaan. Hal ini memungkinkan Anda untuk membuat sebuah game dengan fitur yang lengkap dan sebuah program multimedia dalam bahasa python. Pygame sangat portabel dan dapat berjalan pada hampir semua platform dan sistem operasi. Pygame sendiri telah didownload jutaan kali, dan telah memiliki jutaan kunjungan ke situsnya.
+
+Pygame ini gratis. Dan dirilis di bawah Lisensi GPL , Anda dapat membuat sebuah aplikasi yang open source, gratis, freeware, shareware, dan game komersial dengan pygame ini.
+
+Untuk pengenalan yang bagus untuk pygame ini, periksa baris demi baris simpanse tutorial , dan pengenalan untuk programmer python atau Bab 17 sampai 20 dari buku "Ciptakan Anda Game Komputer Sendiri dengan Python" .
